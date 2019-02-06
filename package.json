@@ -1,0 +1,31 @@
+{
+  "name": "gatsby-starter-hello-world",
+  "description": "Gatsby hello world starter",
+  "license": "MIT",
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.4",
+    "@fortawesome/fontawesome-free-brands": "^5.0.8",
+    "@fortawesome/fontawesome-free-regular": "^5.0.8",
+    "@fortawesome/react-fontawesome": "0.0.17",
+    "gatsby": "^1.9.277",
+    "gatsby-link": "^1.6.37",
+    "gatsby-plugin-glamor": "^1.6.13",
+    "gatsby-plugin-react-helmet": "^2.0.6",
+    "gatsby-plugin-typography": "^1.7.16",
+    "gatsby-source-filesystem": "^1.5.39",
+    "gatsby-transformer-remark": "^1.7.34",
+    "glamorous": "^4.11.6",
+    "lodash": "^4.17.5",
+    "react-helmet": "^5.2.0",
+    "typography-theme-bootstrap": "^0.16.7"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}
