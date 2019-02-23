@@ -1,52 +1,48 @@
 {
   "assetsByChunkName": {
     "path---posts-iec-61850-server-beaglebone-black": [
-      "path---posts-iec-61850-server-beaglebone-black-653d53c97b38afcb4b44.js",
-      "path---posts-iec-61850-server-beaglebone-black-653d53c97b38afcb4b44.js.map"
+      "path---posts-iec-61850-server-beaglebone-black-994bb51427e249617a53.js",
+      "path---posts-iec-61850-server-beaglebone-black-994bb51427e249617a53.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-4046d74f6cdcef091460.js",
-      "component---src-pages-index-js-4046d74f6cdcef091460.js.map"
+      "component---src-pages-index-js-cf3bfd00d6d154e44134.js",
+      "component---src-pages-index-js-cf3bfd00d6d154e44134.js.map"
     ],
     "path---": [
       "path----34a52aee376d570905d5.js",
       "path----34a52aee376d570905d5.js.map"
     ],
     "path---posts-bubble-sort-with-pointers-in-c": [
-      "path---posts-bubble-sort-with-pointers-in-c-29bb82fda23fb881f9e8.js",
-      "path---posts-bubble-sort-with-pointers-in-c-29bb82fda23fb881f9e8.js.map"
+      "path---posts-bubble-sort-with-pointers-in-c-a94165671aff6aef3ef5.js",
+      "path---posts-bubble-sort-with-pointers-in-c-a94165671aff6aef3ef5.js.map"
     ],
     "path---posts-making-a-blog-with-gatsby": [
-      "path---posts-making-a-blog-with-gatsby-bd8c60599b5a8e7b3ae0.js",
-      "path---posts-making-a-blog-with-gatsby-bd8c60599b5a8e7b3ae0.js.map"
+      "path---posts-making-a-blog-with-gatsby-3099bad9fab3863d6124.js",
+      "path---posts-making-a-blog-with-gatsby-3099bad9fab3863d6124.js.map"
     ],
     "path---posts-gpio-server-beaglebone-black": [
-      "path---posts-gpio-server-beaglebone-black-8098d3bf9053cd9235d5.js",
-      "path---posts-gpio-server-beaglebone-black-8098d3bf9053cd9235d5.js.map"
+      "path---posts-gpio-server-beaglebone-black-d2db09a64b47b1e9affa.js",
+      "path---posts-gpio-server-beaglebone-black-d2db09a64b47b1e9affa.js.map"
     ],
     "path---posts-linked-lists-in-c": [
-      "path---posts-linked-lists-in-c-49442391827ce5a6bd28.js",
-      "path---posts-linked-lists-in-c-49442391827ce5a6bd28.js.map"
+      "path---posts-linked-lists-in-c-fc350228092d9b170a70.js",
+      "path---posts-linked-lists-in-c-fc350228092d9b170a70.js.map"
     ],
     "component---src-templates-blog-post-js": [
-      "component---src-templates-blog-post-js-781ae30eefa4699cac21.js",
-      "component---src-templates-blog-post-js-781ae30eefa4699cac21.js.map"
+      "component---src-templates-blog-post-js-5532a3be2d119a2613a6.js",
+      "component---src-templates-blog-post-js-5532a3be2d119a2613a6.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-455d1c862f8d070cabee.js",
-      "component---src-layouts-index-js-455d1c862f8d070cabee.js.map"
-    ],
-    "path---posts-debugging-methods-uc": [
-      "path---posts-debugging-methods-uc-9eb3beb5bbdb492cda9a.js",
-      "path---posts-debugging-methods-uc-9eb3beb5bbdb492cda9a.js.map"
+      "component---src-layouts-index-js-5de0dce48cfd3060422c.js",
+      "component---src-layouts-index-js-5de0dce48cfd3060422c.js.map"
     ],
     "path---index": [
-      "path---index-59f4cf25dfd747463fba.js",
-      "path---index-59f4cf25dfd747463fba.js.map"
+      "path---index-66736e6f9bed93dc37cb.js",
+      "path---index-66736e6f9bed93dc37cb.js.map"
     ],
     "path---posts-gpio-api-beaglebone-black": [
-      "path---posts-gpio-api-beaglebone-black-5765be8d5e68dc150469.js",
-      "path---posts-gpio-api-beaglebone-black-5765be8d5e68dc150469.js.map"
+      "path---posts-gpio-api-beaglebone-black-207a508c742c861ab5c1.js",
+      "path---posts-gpio-api-beaglebone-black-207a508c742c861ab5c1.js.map"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-57d76e73c0c2920753c0.js",
@@ -54,41 +50,27 @@
     ],
     "commons": [
       "commons-107f6cbcee83335d5de0.js",
-      "commons-107f6cbcee83335d5de0.js.map"
+      "build-js-styles.css",
+      "commons-107f6cbcee83335d5de0.js.map",
+      "build-js-styles.css.map"
     ],
     "path---404-html": [
       "path---404-html-3d48a1dc3b59e75cc016.js",
       "path---404-html-3d48a1dc3b59e75cc016.js.map"
     ],
-    "path---posts-getting-started-with-makefiles": [
-      "path---posts-getting-started-with-makefiles-fc1102c26d99943d340e.js",
-      "path---posts-getting-started-with-makefiles-fc1102c26d99943d340e.js.map"
-    ],
-    "path---posts-inter-thread-communication": [
-      "path---posts-inter-thread-communication-be3500f80b9ad20f7cc7.js",
-      "path---posts-inter-thread-communication-be3500f80b9ad20f7cc7.js.map"
-    ],
-    "path---posts-function-pointers": [
-      "path---posts-function-pointers-3eaaef3503689ecbc90a.js",
-      "path---posts-function-pointers-3eaaef3503689ecbc90a.js.map"
-    ],
     "app": [
-      "app-8fd31f7cbb8d895a713c.js",
+      "app-8dcdc833ad2d44a0408f.js",
       "build-js-styles.css",
-      "app-8fd31f7cbb8d895a713c.js.map",
+      "app-8dcdc833ad2d44a0408f.js.map",
       "build-js-styles.css.map"
     ],
     "path---404": [
       "path---404-3d48a1dc3b59e75cc016.js",
       "path---404-3d48a1dc3b59e75cc016.js.map"
     ],
-    "path---posts-doxygen-for-c": [
-      "path---posts-doxygen-for-c-24a5007d6443a1192f13.js",
-      "path---posts-doxygen-for-c-24a5007d6443a1192f13.js.map"
-    ],
     "component---src-pages-about-js": [
-      "component---src-pages-about-js-d5e9b28442b44a67c80b.js",
-      "component---src-pages-about-js-d5e9b28442b44a67c80b.js.map"
+      "component---src-pages-about-js-25f2f89d865efd933e93.js",
+      "component---src-pages-about-js-25f2f89d865efd933e93.js.map"
     ],
     "path---about": [
       "path---about-3d48a1dc3b59e75cc016.js",
