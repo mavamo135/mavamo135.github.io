@@ -8,7 +8,7 @@ export default class About extends React.Component {
       <div>
         <Helmet title={`About | ${siteTitle}`} />
         <h1>
-          About {siteTitle}
+          Acerca de {siteTitle}
         </h1>
         <p>
           En este blog comparto informaci&oacute;n interesante sobre algunos proyectos que he hecho.
@@ -16,12 +16,15 @@ export default class About extends React.Component {
           y Ciberseguridad. Espero que te agrade!
         </p>
         <h2>
-          About me
+          Acerca de m&iacute;
         </h2>
         <p>
-          Mi nombre es Maximiliano Valencia y vivo en Quer&eacute;taro. Estudi&eacute; Ingenier&iacute;a Rob&oacute;tica
-          en la Universidad Polit&eacute;nica de Guanajuato y Maestr&iacute;a en Ciencia en Instrumentaci&oacute;n y 
-          Control en la Universidad Aut&oacute;noma de Quer&eacute;taro.
+          Mi nombre es Maximiliano Valencia y vivo en la ciudad de Celaya, Gto. Estudi&eacute; Ingenier&iacute;a 
+          Rob&oacute;tica en la Universidad Polit&eacute;nica de Guanajuato y Maestr&iacute;a en Ciencias con 
+          especialidad en Instrumentaci&oacute;n y Control en la Universidad Aut&oacute;noma de Quer&eacute;taro. 
+          Actualmente trabajo como Ingeniero de Diseño Electr&oacute;nico en <a href="http://licore.org">LICORE</a> haciendo 
+          sistemas embebidos para aplicaciones de Electr&oacute;nica de Potencia y Sistemas de Comunicaciones 
+          para Redes El&eacute;ctricas Inteligentes.
         </p>
       </div>
     )

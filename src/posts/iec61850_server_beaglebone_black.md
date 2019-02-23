@@ -1,43 +1,48 @@
 ---
-title: IEC61850 server with Beaglebone Black
+title: Servidor MMS IEC 61850 en una Beaglebone Black
 author: Maximiliano Valencia
 date: 2018-03-15
 ---
-# IEC61850 server with a Beaglebone Black
 
-## IEC61850 Server
-We will cross-compile the server file using a Ubuntu 17.10 machine:
+## Servidor MMS
+Como sistema de desarrollo se utiliza una máquina virtual con Ubuntu 17.10.
+Primero, se requiere descargar el repositorio desde Github:
+```bash
+	git clone https://github.com/mz-automation/libiec61850.git
+```
+
+Después, vamos a compilar para la arquitectura ARM utilizando el compilador
+gcc-arm-linux el ejemplo que viene en la carpeta demos/beaglebone:
 ```bash
 	sudo apt-get install gcc-arm-linux-gnueabi gcc-arm-linux-gnueabihf
 	cd demos/beaglebone
 	make TARGET=LINUX-ARM
 	scp beagle_demo debian@192.168.7.2:/var/lib/cloud9
 ```
-Run the file in the beaglebone:
+
+Finalmente, hacemos una conexión mediante SSH con la Beaglebone black y 
+corremos el programa:
 ```bash
 	sudo ./var/lib/cloud9/beagle_demo
 ```
 
 
-## IEC61850 Client
+## Cliente MMS
 
-Now we have top build the IEC 61850 client that will run in our Ubuntu machine.
-First, add this line to beagle_client.c for the Thread_sleep() function to work:
-```C
-	#include "iec61850_client.h"
-	#include "hal_thread.h"
-```
-Then, we have to modify the Makefile to build the file for the client:
+Ahora requerimos compilar el cliente MMS que va a correr en la máquina
+virtual de Ubuntu. Primero modificamos el archivo Makefile para que compile
+el programa del cliente MMS cambiando estas líneas:
 ```makefile
 	PROJECT_BINARY_NAME = beagle_client
 	PROJECT_SOURCES = beagle_client.c
 ```
-Make the beagle_client file:
+
+Ahora compilamos el programa del cliente MMS:
 ```bash
-	make
+	make TARGET=LINUX-ARM
 ```
-Run the beagle_client file:
+
+Finalmente, corremos el programa del cliente MMS en la máquina virtual Ubuntu:
 ```bash
-	sudo ./beagle_client [IP_ADDRESS_BEAGLE]
-	sudo ./beagle_client beaglebone
+	sudo ./beagle_client [DIRECCION_IP_BEAGLE]
 ```

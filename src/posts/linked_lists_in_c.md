@@ -1,18 +1,21 @@
 ---
-title: Linked lists in C
+title: Listas enlazadas en C
 author: Maximiliano Valencia
 date: 2018-03-21
 ---
 
-```c
-#include <stdio.h>
-#include <stdlib.h>
+Una parte fundamental para definir las listas enlazadas es la estructura que 
+tiene un elemento que apunta a otra estructura:
 
+```c
 typedef struct Node {
 	Node *next;
 	int data;
 }
+```
 
+
+```c
 int search(Node *list, int x) {
 	Node *ptr;
 	ptr = list;
@@ -36,5 +39,3 @@ int main() {
 	return 0;
 }
 ```
-
-

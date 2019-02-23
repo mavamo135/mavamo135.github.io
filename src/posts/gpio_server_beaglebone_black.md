@@ -1,14 +1,16 @@
 ---
-title: GPIO server with Beaglebone Black
+title: Servidor GPIO en una Beaglebone Black
 author: Maximiliano Valencia
 date: 2018-03-16
 ---
-#Making a GPIO server with a Beaglebone Black
-In this post we will build a GPIO server using Javascript to control the Beaglebone Black on-board LEDs.
-I will divide the post in server side and client side programming.
+En este post vamos a hacer un servidor utilizando Javascript para controlar 
+los LEDs de la Beaglebone Black. El post está dividido en programación del 
+servidor y del cliente.
 
-##Server
+##Servidor
 
+Primero, requerimos los módulos necesarios para crear el servidor y para accesar
+a los GPIOs:
 ```Javascript
 	#!/usr/bin/env node
 	var http = require('http').createServer(handler)//require http server, and create server with function handler()
@@ -16,7 +18,8 @@ I will divide the post in server side and client side programming.
 	var io = require('socket.io')(http)             //require socket.io module and pass the http object (server)
 	var Gpio = require('bonescript')                //include onoff to interact with the GPIO
 ```
-Initialize the GPIO of LEDs as outputs and set the value to low:
+
+Inicializamos los GPIOs de los LEDs como salidas y escribimos un valor de LOW:
 ```Javascript
 	var state = [Gpio.LOW, Gpio.LOW, Gpio.LOW, Gpio.LOW]
 	var leds = ["USR0", "USR1", "USR2", "USR3"]
@@ -25,7 +28,9 @@ Initialize the GPIO of LEDs as outputs and set the value to low:
 		b.digitalWrite(leds[i], state[i])
 	}
 ```
-Next, we will create our server with http and define the function handler:
+
+Creamos el servidor con el módulo http y definimos la función para manejar las
+conexiones al servidor:
 ```Javascript
 	http.listen(3002); //listen to port 3002
 	function handler (req, res) { //create server handler function
@@ -40,10 +45,11 @@ Next, we will create our server with http and define the function handler:
 		})
 	}
 ```
-We define the function that will handle the messages between the client and server:
+
+Definimos la función que va a manejar los mensajes entre el cliente y el servidor:
 ```Javascript
 	io.sockets.on('connection', function (socket) {// WebSocket Connection, connection from client
-		socket.emit('led1', state[0]); //send led0status to client
+		socket.emit('led1', state[0]); //send led0 status to client
 		socket.emit('led2', state[1]); //send led1 status to client
 		socket.emit('led3', state[2]); //send led2 status to client
 		socket.emit('led4', state[3]); //send led3 status to client
@@ -67,7 +73,9 @@ We define the function that will handle the messages between the client and serv
 		Gpio.digitalWrite(leds[led], state[led])
 	}
 ```
-Last, we define the function that will handle the user stop of the program (CTRL+C):
+
+Finalmente, definimos la función que va a manejar el comando de paro del programa
+del usuario (CTRL+C): 
 ```Javascript
 	process.on('SIGINT', function () { //on ctrl+c
 		Gpio.digitalWrite(leds[0], Gpio.LOW) // Turn LED off
@@ -78,8 +86,9 @@ Last, we define the function that will handle the user stop of the program (CTRL
 	})
 ```
 
-##Client
-The HTML file that will be received by the client is:
+##Cliente
+
+El archivo HTML que será enviado al cliente es el siguiente:
 ```HTML
 	<!DOCTYPE html>
 	<html>
@@ -115,7 +124,8 @@ The HTML file that will be received by the client is:
 		</body>
 	</html> 
 ```
-The styles are defined inside the head tags with:
+
+Los estilos de los elementos están definidos dentro de la etiqueta `<head>`:
 ```HTML
 	<style>
 		.switch {
@@ -167,7 +177,8 @@ The styles are defined inside the head tags with:
 		}
 	</style>
 ```
-The scripts are defined inside the head tags with:
+
+Finalmente, definimos las etiquetas `<script>` dentro de la etiqueta `<head>`:
 ```HTML
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script> <!-- include socket.io client side script -->
 	<script>

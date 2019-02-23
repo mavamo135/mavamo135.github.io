@@ -3,6 +3,8 @@ import Helmet from 'react-helmet'
 import g from "glamorous";
 import Link from "gatsby-link";
 import { rhythm } from "../utils/typography";
+import About from "../components/About"
+import './index.css'
 
 export default class Index extends React.Component {
     render () {
@@ -11,18 +13,24 @@ export default class Index extends React.Component {
       return (
         <div>
             <Helmet title="Posts | MyBlog" />
-            <g.H4>{posts.totalCount} Posts</g.H4>
-            {posts.edges.map(({ node }) => (
-                <div key={node.id}>
-                    <Link to={node.fields.slug} css={{ textDecoration: `none`, color: `inherit` }}>
-                        <g.H2 marginBottom={rhythm(1 / 4)}>
-                            {node.frontmatter.title}{" "}
-                            <g.H4 color="#999999"> by {node.frontmatter.author} — {node.frontmatter.date}</g.H4>
-                        </g.H2>
-                        <p>{node.excerpt}</p>
-                    </Link>
+            <div class="row">
+                <div class="column" id="leftcolumn">
+                    <About />
                 </div>
-            ))}
+                <div class="column" id="rightcolumn">
+                    <g.H4>{posts.totalCount} Posts</g.H4>
+                    {posts.edges.map(({ node }) => (
+                        <div key={node.id}>
+                            <Link to={node.fields.slug} css={{ textDecoration: `none`, color: `inherit` }}>
+                                <g.H2 marginBottom={rhythm(1 / 4)}>
+                                    {node.frontmatter.title}{" "}
+                                    <g.H5 color="#999999">{node.frontmatter.date}</g.H5>
+                                </g.H2>
+                            </Link>
+                        </div>
+                    ))}
+                </div>
+            </div>
         </div>
       )
     }

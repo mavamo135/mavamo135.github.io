@@ -1,25 +1,32 @@
 ---
-title: Making a blog with Gatsby
+title: Haciendo un blog con Gatsby
 author: Maximiliano Valencia
 date: "2018-03-12"
 ---
 
-In this post I will show how to make your personal blog website using Gatsby.
+En este post voy a mostrar como crear tu página web para blog personal utilizando
+Gatsby.
 
-[Gatsby](https://www.gatsbyjs.org) is a static site generator with a lot of templates which you can use to build your project. One advantage of Gatsby is that it uses GraphQL, so you can get your content from multiple places starting from Markdown to Google Sheets! Ohh, did I tell that you build using React!! 
+[Gatsby](https://www.gatsbyjs.org) es un generador de páginas estáticas con varias 
+plantillas que puedes utilizar para crear tu proyecto. La ventaja de Gatsby es que 
+las páginas estáticas se pueden alojar en páginas web que no pueden ejecutar código
+del lado del servidor como Github Pages. Además, puedes obtener contenido desde múltiples
+lugares gracias a que utiliza GraphQL.
 
-##Requirements
+##Requisitos
 
-First, you have to install Gatsby command line interface tool. This tool is used to create new Gatsby projects. 
+Primero, se requiere instalar la herramienta de línea de comandos de Gatsby.
 ```bash
     npm install -g gatsby-cli
 ```
-Next, initialize the blog with:
+
+Puedes utilizar una plantilla de blog para iniciar el proyecto:
 ```bash 
-    gatsby new my-blog https://github.com/mavamo135/my-blog
+    gatsby new my-blog-starter https://github.com/gatsbyjs/gatsby-starter-blog
 ```
- That's it! You can start your blog with:
+
+Listo! Puedes iniciar tu blog utilizando:
  ```bash
-    cd my-blog
+    cd my-blog-starter
     gatsby develop
 ```

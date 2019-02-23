@@ -1,19 +1,22 @@
 ---
-title: GPIO API with Beaglebone Black
+title: API GPIO en una Beaglebone Black
 author: Maximiliano Valencia
 date: 2018-03-04
 ---
 
-#Making a GPIO API with a Beaglebone Black
-In this post we will build a GPIO API using Javascript to control the Beaglebone Black on-board LEDs.
+En este post vamos a hacer una API usando Javascript para controlar los LEDs
+de la Beaglebone Black.
 
+Primero, requerimos los módulos necesarios para crear el servidor y para accesar
+a los GPIOs:
 ```Javascript
 	#!/usr/bin/env node
 	var b = require('bonescript')
 	var http = require('http')
 	var url = require('url')
 ```
-Initialize the GPIO of LEDs as outputs and set the value to low:
+
+Inicializamos los GPIOs de los LEDs como salidas y escribimos un valor de LOW:
 ```Javascript
 	var state = [b.LOW, b.LOW, b.LOW, b.LOW]
 	var leds = ["USR0", "USR1", "USR2", "USR3"]
@@ -23,7 +26,9 @@ Initialize the GPIO of LEDs as outputs and set the value to low:
 		b.digitalWrite(leds[i], state[i])
 	}
 ```
-Next, we will create our server with http:
+
+Creamos el servidor con el módulo http y definimos la función para manejar las
+peticiones del cliente:
 ```Javascript
 	http.createServer(function (req, res) {
 		var urlReq = url.parse(req.url, true).pathname
@@ -48,7 +53,9 @@ Next, we will create our server with http:
 		res.end()
 	}).listen(3001)
 ```
-We define our functions and we create a periodic function just to know that our program is running:
+
+Definimos las funciones para escribir a los GPIOs y creamos una función periódica 
+para saber que nuestro programa está corriendo:
 ```Javascript
 	setInterval( () => {
 		toggle(3)
@@ -65,3 +72,6 @@ We define our functions and we create a periodic function just to know that our 
 		else b.digitalWrite(leds[i], b.LOW)
 	}
 ```
+
+Para hacer conexión con el servidor podemos utilizar un navegador web y conectar 
+a la siguiente dirección <DIRECCION_IP_BEAG>:3001/USR0?1.
