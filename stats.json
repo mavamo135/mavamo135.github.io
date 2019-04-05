@@ -1,67 +1,63 @@
 {
   "assetsByChunkName": {
-    "path---posts-iec-61850-server-beaglebone-black": [
-      "path---posts-iec-61850-server-beaglebone-black-994bb51427e249617a53.js",
-      "path---posts-iec-61850-server-beaglebone-black-994bb51427e249617a53.js.map"
+    "path---servidor-iec-61850-mms-beaglebone-black": [
+      "path---servidor-iec-61850-mms-beaglebone-black-77b69f117cb0cb34f82f.js",
+      "path---servidor-iec-61850-mms-beaglebone-black-77b69f117cb0cb34f82f.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-cf3bfd00d6d154e44134.js",
-      "component---src-pages-index-js-cf3bfd00d6d154e44134.js.map"
+      "component---src-pages-index-js-2fa4c21da4f51c737633.js",
+      "component---src-pages-index-js-2fa4c21da4f51c737633.js.map"
+    ],
+    "path---api-gpio-beaglebone-black": [
+      "path---api-gpio-beaglebone-black-ae1673535505571b6844.js",
+      "path---api-gpio-beaglebone-black-ae1673535505571b6844.js.map"
     ],
     "path---": [
       "path----34a52aee376d570905d5.js",
       "path----34a52aee376d570905d5.js.map"
     ],
-    "path---posts-bubble-sort-with-pointers-in-c": [
-      "path---posts-bubble-sort-with-pointers-in-c-a94165671aff6aef3ef5.js",
-      "path---posts-bubble-sort-with-pointers-in-c-a94165671aff6aef3ef5.js.map"
-    ],
-    "path---posts-making-a-blog-with-gatsby": [
-      "path---posts-making-a-blog-with-gatsby-3099bad9fab3863d6124.js",
-      "path---posts-making-a-blog-with-gatsby-3099bad9fab3863d6124.js.map"
-    ],
-    "path---posts-gpio-server-beaglebone-black": [
-      "path---posts-gpio-server-beaglebone-black-d2db09a64b47b1e9affa.js",
-      "path---posts-gpio-server-beaglebone-black-d2db09a64b47b1e9affa.js.map"
-    ],
-    "path---posts-linked-lists-in-c": [
-      "path---posts-linked-lists-in-c-fc350228092d9b170a70.js",
-      "path---posts-linked-lists-in-c-fc350228092d9b170a70.js.map"
-    ],
     "component---src-templates-blog-post-js": [
-      "component---src-templates-blog-post-js-5532a3be2d119a2613a6.js",
-      "component---src-templates-blog-post-js-5532a3be2d119a2613a6.js.map"
+      "component---src-templates-blog-post-js-eeacf8bd211b79b17b6b.js",
+      "component---src-templates-blog-post-js-eeacf8bd211b79b17b6b.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-5de0dce48cfd3060422c.js",
-      "component---src-layouts-index-js-5de0dce48cfd3060422c.js.map"
+      "component---src-layouts-index-js-01c7fdc52eff4eb65db5.js",
+      "component---src-layouts-index-js-01c7fdc52eff4eb65db5.js.map"
+    ],
+    "path---listas-enlazadas-c": [
+      "path---listas-enlazadas-c-cde900adad39666a8dbe.js",
+      "path---listas-enlazadas-c-cde900adad39666a8dbe.js.map"
     ],
     "path---index": [
-      "path---index-66736e6f9bed93dc37cb.js",
-      "path---index-66736e6f9bed93dc37cb.js.map"
+      "path---index-328ce077fae75739285e.js",
+      "path---index-328ce077fae75739285e.js.map"
     ],
-    "path---posts-gpio-api-beaglebone-black": [
-      "path---posts-gpio-api-beaglebone-black-207a508c742c861ab5c1.js",
-      "path---posts-gpio-api-beaglebone-black-207a508c742c861ab5c1.js.map"
+    "path---servidor-gpio-beaglebone-black": [
+      "path---servidor-gpio-beaglebone-black-743007bc678a8e15841e.js",
+      "path---servidor-gpio-beaglebone-black-743007bc678a8e15841e.js.map"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-57d76e73c0c2920753c0.js",
       "component---src-pages-404-js-57d76e73c0c2920753c0.js.map"
     ],
     "commons": [
-      "commons-107f6cbcee83335d5de0.js",
+      "commons-4187c5b9072aeb16dccd.js",
       "build-js-styles.css",
-      "commons-107f6cbcee83335d5de0.js.map",
+      "commons-4187c5b9072aeb16dccd.js.map",
       "build-js-styles.css.map"
     ],
     "path---404-html": [
       "path---404-html-3d48a1dc3b59e75cc016.js",
       "path---404-html-3d48a1dc3b59e75cc016.js.map"
     ],
+    "path---ordenacion-burbuja-c": [
+      "path---ordenacion-burbuja-c-8ad38c2b15fdc76242c8.js",
+      "path---ordenacion-burbuja-c-8ad38c2b15fdc76242c8.js.map"
+    ],
     "app": [
-      "app-8dcdc833ad2d44a0408f.js",
+      "app-23ab682ab7fec23a767c.js",
       "build-js-styles.css",
-      "app-8dcdc833ad2d44a0408f.js.map",
+      "app-23ab682ab7fec23a767c.js.map",
       "build-js-styles.css.map"
     ],
     "path---404": [
@@ -69,8 +65,8 @@
       "path---404-3d48a1dc3b59e75cc016.js.map"
     ],
     "component---src-pages-about-js": [
-      "component---src-pages-about-js-25f2f89d865efd933e93.js",
-      "component---src-pages-about-js-25f2f89d865efd933e93.js.map"
+      "component---src-pages-about-js-d2f6ffd11f0c4c4990dd.js",
+      "component---src-pages-about-js-d2f6ffd11f0c4c4990dd.js.map"
     ],
     "path---about": [
       "path---about-3d48a1dc3b59e75cc016.js",
