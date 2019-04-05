@@ -5,7 +5,7 @@ export default class About extends React.Component {
   render () {
     const siteTitle = this.props.data.site.siteMetadata.title
     return (
-      <div>
+      <div style={{margin: '0 auto', maxWidth: 960, padding: '0px 1.0875rem 1.45rem', paddingTop: 0}}>
         <Helmet title={`About | ${siteTitle}`} />
         <h1>
           Acerca de {siteTitle}
@@ -20,7 +20,7 @@ export default class About extends React.Component {
         </h2>
         <p>
           Mi nombre es Maximiliano Valencia y vivo en la ciudad de Celaya, Gto. Estudi&eacute; Ingenier&iacute;a 
-          Rob&oacute;tica en la Universidad Polit&eacute;nica de Guanajuato y Maestr&iacute;a en Ciencias con 
+          Rob&oacute;tica en la Universidad Polit&eacute;cnica de Guanajuato y Maestr&iacute;a en Ciencias con 
           especialidad en Instrumentaci&oacute;n y Control en la Universidad Aut&oacute;noma de Quer&eacute;taro. 
           Actualmente trabajo como Ingeniero de Diseño Electr&oacute;nico en <a href="http://licore.org">LICORE</a> haciendo 
           sistemas embebidos para aplicaciones de Electr&oacute;nica de Potencia y Sistemas de Comunicaciones 

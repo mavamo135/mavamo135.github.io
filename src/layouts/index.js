@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import Header from '../components/Header'
 import './index.css'
+require("prismjs/themes/prism.css")
+require("prismjs/plugins/line-numbers/prism-line-numbers.css")
 
 const TemplateWrapper = ({ data, children }) => (
   <div>

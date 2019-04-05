@@ -4,7 +4,7 @@ author: Maximiliano Valencia
 date: 2018-03-20
 ---
 
-```c
+```c{numberLines: true}
 void BubbleSort(uint8_t *pt, uint32_t size)
 {
    uint32_t i,j; 

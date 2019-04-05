@@ -1,7 +1,7 @@
 import React from 'react'
 import profilePic from './profile-pic.png'
 import { rhythm } from '../../utils/typography'
-import { FaCode, FaRegEnvelope, FaGlobeAmericas, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaCode, FaRegEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import "./index.css"
 
 const About = () => {
@@ -34,9 +34,6 @@ const About = () => {
         </a>
         <a href="mailto:mavamo135@gmail.com"> 
             <FaRegEnvelope style={{width: '24px', height: '24px'}}/>
-        </a>
-        <a href="https://mavamo135.github.io"> 
-            <FaGlobeAmericas style={{width: '24px', height: '24px'}}/>
         </a>
       </div>
     </div>

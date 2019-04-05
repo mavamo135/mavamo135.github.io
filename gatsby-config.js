@@ -8,10 +8,23 @@ module.exports = {
             resolve: `gatsby-source-filesystem`,
             options: {
                 name: `src`,
-                path: `${__dirname}/src/`,
+                path: `${__dirname}/content/posts`,
             },
         },
-        `gatsby-transformer-remark`,
+        {
+            resolve: `gatsby-transformer-remark`,
+            options: {
+                plugins: [
+                    `gatsby-remark-prismjs`,
+                    {
+                        resolve: "gatsby-remark-images",
+                        options: {
+                            maxWidth: 590,
+                        },
+                    },
+                ],
+            },
+        },
         `gatsby-plugin-glamor`,
         {
             resolve: `gatsby-plugin-typography`,

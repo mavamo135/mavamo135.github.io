@@ -18,7 +18,7 @@ export default class BlogPostTemplate extends React.Component {
           display: 'block', 
           marginBottom: rhythm(1), 
           marginTop: rhythm(-1)}}>
-            by {post.frontmatter.author} 
+            {post.frontmatter.author} 
             <span style={{fontSize: '0.8em'}}> 
               - {post.frontmatter.date}
             </span>
@@ -41,7 +41,7 @@ export const query = graphql`
       frontmatter {
         title
         author
-        date(formatString: "DD MMMM, YYYY")
+        date(formatString: "DD MMMM, YYYY", locale: "es")
       }
     }
   }
